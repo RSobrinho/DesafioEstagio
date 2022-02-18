@@ -1,0 +1,26 @@
+/* Gerenal Settings */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rectangle {
+  background-color: #cec6ce;
+  width: 100vw;
+  height: 6rem;
+}
