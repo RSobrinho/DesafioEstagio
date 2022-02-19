@@ -1,5 +1,6 @@
 import ReactApexChart from 'react-apexcharts'
 import infoIcon from '../Assets/infoIcon.png'
+import ResizeCharts from './ResizeCharts'
 
 const ScatterChart = () => {
   const state = {
@@ -97,7 +98,8 @@ const ScatterChart = () => {
         options={state.options}
         series={state.series}
         type="scatter"
-        width="600"
+        width={ResizeCharts()}
+        height={ResizeCharts()}
       />
     </div>
   )

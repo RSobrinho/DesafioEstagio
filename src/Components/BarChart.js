@@ -1,5 +1,6 @@
 import ReactApexChart from 'react-apexcharts'
 import infoIcon from '../Assets/infoIcon.png'
+import ResizeCharts from './ResizeCharts'
 
 const BarChart = () => {
   const state = {
@@ -61,7 +62,8 @@ const BarChart = () => {
         options={state.options}
         series={state.series}
         type="bar"
-        width="600"
+        width={ResizeCharts()}
+        height={ResizeCharts()}
       />
     </div>
   )
