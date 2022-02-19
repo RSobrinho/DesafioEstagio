@@ -1,13 +1,15 @@
 import './style.css'
 import Header from './Components/Header'
-
+import BarChart from './Components/BarChart'
 function App() {
   return (
     <div className="App">
       <div className="rectangle"></div>
-      <main className="container">
+
+      <div className="container">
         <Header />
-      </main>
+        <BarChart />
+      </div>
     </div>
   )
 }
