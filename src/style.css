@@ -12,9 +12,23 @@
   height: 9.1rem;
 }
 
-/* MainContainer */
-.container {
-  margin: 3.3rem 2.8rem;
+/* Containers */
+.Header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 3.3rem 2.8rem 4.5rem;
+}
+
+.Charts__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2.8rem;
+
+  margin: 0rem 2.8rem;
 }
 
 /* Header (Title + Subtitle + FilterButton) */
@@ -23,7 +37,8 @@
   justify-content: space-between;
   align-items: center;
 
-  margin-bottom: 4.5rem;
+  width: 100%;
+  max-width: 144rem;
 }
 
 .Header > div {
@@ -61,33 +76,36 @@
 }
 
 /* CardStyle */
-.card__container {
+.Card {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 
-  max-width: 68rem;
+  width: 100%;
+  max-width: 70.4rem;
 }
 
-.card__container > .card__info {
+/* Bar/Scatter Charts */
+.Card__infoChart {
   display: flex;
   column-gap: 1.2rem;
 
   position: relative;
   color: #5d405c;
 
-  top: 1.7rem;
+  top: 1.2rem;
   right: 12rem;
+
+  z-index: 1;
 }
 
-.card__info > h3 {
+.Card__infoChart h3 {
   font-size: 1.4rem;
 }
 
-.card__info > img {
+.Card__infoChart img {
   object-fit: contain;
 }
