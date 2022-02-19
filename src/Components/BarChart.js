@@ -51,8 +51,8 @@ const BarChart = () => {
   }
 
   return (
-    <div className="card__container">
-      <div className="card__info">
+    <div className="Card">
+      <div className="Card__infoChart">
         <h3>Barras: Criptomoedas que mais cresceram em 2021</h3>
         <img src={infoIcon} alt="infoIcon" />
       </div>
