@@ -1,26 +1,59 @@
-/* Gerenal Settings */
-* {
-  box-sizing: border-box;
-  margin: 0px;
-}
-
-html {
-  font-size: 62.5%; /* 1rem = 10px */
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-}
-
+/* Main App Settings */
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/* Top purple rectangle */
 .rectangle {
   background-color: #cec6ce;
   width: 100vw;
-  height: 6rem;
+  height: 9.1rem;
+}
+
+/* MainContainer */
+.container {
+  margin: 3.3rem 2.8rem;
+}
+
+/* Header (Title + Subtitle + FilterButton) */
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.Header h1 {
+  font-size: 2.8rem;
+  color: #5d405c;
+  font-weight: 700;
+}
+
+.Header h3 {
+  font-size: 1.4rem;
+  color: #828282;
+  font-weight: 500;
+}
+
+.Header button {
+  border-radius: 10px;
+  border-style: none;
+  background-color: #5d405c;
+  display: inline-block;
+
+  width: 10rem;
+  height: 4rem;
+
+  color: #f6f6f6;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
