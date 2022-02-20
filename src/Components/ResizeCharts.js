@@ -60,3 +60,5 @@ const ResizeCharts = () => {
 }
 
 export default ResizeCharts
+
+// Até deu certo, mas depois descobri o próprio obj responsive da biblioteca apexcharts, e isso facilitou 300%

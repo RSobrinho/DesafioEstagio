@@ -7,3 +7,5 @@ const OnOffThings = () => {
 }
 
 export default OnOffThings
+
+// em resumo, não deu certo essa tentativa de implementação componentizada do state :/

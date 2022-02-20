@@ -1,6 +1,7 @@
 import ReactApexChart from 'react-apexcharts'
 import React from 'react'
 import infoIcon from '../Assets/infoIcon.png'
+// import OnOffThings, { isActive, setActive } from './OnOffThings'
 // import ResizeCharts from './ResizeCharts'
 
 const ScatterChart = () => {

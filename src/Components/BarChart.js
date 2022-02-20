@@ -12,12 +12,10 @@ const BarChart = () => {
         data: [3555, 4481, 7458, 7944, 9238, 9598, 11260, 12970, 15647]
       }
     ],
-    // utilizar o responsive do proprio apexcharts, coloca options, chart, width e height
-
-    // colocar chart fontFamily
-
-    //
     options: {
+      chart: {
+        type: 'bar'
+      },
       plotOptions: {
         bar: {
           borderRadius: 4,
@@ -135,8 +133,8 @@ const BarChart = () => {
         <img src={infoIcon} alt="infoIcon" onClick={() => changeShow(!show)} />
         <p className={`Card__descChart ${show ? 'on' : ''}`}>
           Criptomedas que mais cresceram em 2021 de acordo com o Banco Digital
-          Nubank (Eu excluí a ultima para propósitos de visualização para esse
-          desafio :)
+          Nubank (Eu excluí a ultima criptomoeda da lista para propósitos de
+          visualização para esse desafio :)
         </p>
       </div>
 

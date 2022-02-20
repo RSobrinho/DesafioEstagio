@@ -59,11 +59,11 @@
   font-weight: 500;
 }
 
-.Header > button {
+/* FilterButton */
+.Header__filter {
   border-radius: 1rem;
   border-style: none;
   background-color: #5d405c;
-  display: inline-block;
 
   width: 10rem;
   height: 4rem;
@@ -71,17 +71,26 @@
   color: #f6f6f6;
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   font-size: 1.4rem;
 }
-.Header > button > img {
-  width: 1.4rem;
+
+.Header__filter:hover {
+  opacity: 0.8;
 }
 
-.Header > button:hover {
-  opacity: 0.8;
+.filter__desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 1rem;
+}
+
+.filter__desc > img {
+  width: 1.4rem;
 }
 
 /* CardStyle */
@@ -108,6 +117,7 @@
   top: 1.2rem;
   right: 12rem;
 
+  /* Para o gráfico não ficar em cima do botão i */
   z-index: 1;
 }
 
@@ -125,14 +135,6 @@
   opacity: 0.6;
 }
 
-.Card__infoChart > .Card__desc {
-  background-color: tomato;
-
-  position: absolute;
-  width: 5rem;
-  height: 5rem;
-}
-
 .Card__descChart {
   display: none;
 
@@ -141,7 +143,7 @@
   top: -10rem;
 
   background-color: turquoise;
-  opacity: 0.8;
+  opacity: 0.7;
   color: rgb(11, 26, 24);
 
   font-weight: 700;
@@ -154,13 +156,12 @@
   padding: 0.2rem;
 }
 
+/* For state ON of infoButtons */
 .on {
-  display: block;
+  display: flex;
 }
 
-@media screen {
-}
-
+/* For Responsive CSS - Not including Charts Responsive */
 @media (max-width: 1435px) {
   html {
     font-size: 50%;
@@ -218,10 +219,10 @@
     width: 6rem;
     height: 6rem;
   }
-  .Header > button > img {
+  .filter__desc > img {
     width: 3rem;
   }
-  .Header > button > h4 {
+  .filter__desc h4 {
     display: none;
   }
 }

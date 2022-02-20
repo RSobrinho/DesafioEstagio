@@ -18,4 +18,8 @@ function App() {
   )
 }
 
+// para questões de boas práticas, testei o HTML utilizando o lighthouse do ctrl + shift + i
+
+// De problematico, a unica coisa foi a performace do site, a velocidade de carregamento e interacao, acredito que seja por causa da biblioteca
+
 export default App
