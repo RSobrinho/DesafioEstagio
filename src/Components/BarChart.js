@@ -1,4 +1,5 @@
 import ReactApexChart from 'react-apexcharts'
+import React from 'react'
 import infoIcon from '../Assets/infoIcon.png'
 // import ResizeCharts from './ResizeCharts'
 // import ShowDesc from './ShowChartDesc'
@@ -125,16 +126,18 @@ const BarChart = () => {
     }
   }
 
+  const [show, changeShow] = React.useState(false)
+
   return (
     <div className="Card">
       <div className="Card__infoChart">
         <h3>Barras: Criptomoedas que mais cresceram em 2021</h3>
-        <img
-          className="Card__infoIcon"
-          src={infoIcon}
-          alt="infoIcon"
-          // onClick={ShowDesc}
-        />
+        <img src={infoIcon} alt="infoIcon" onClick={() => changeShow(!show)} />
+        <p className={`Card__descChart ${show ? 'on' : ''}`}>
+          Criptomedas que mais cresceram em 2021 de acordo com o Banco Digital
+          Nubank (Eu excluí a ultima para propósitos de visualização para esse
+          desafio :)
+        </p>
       </div>
 
       <ReactApexChart

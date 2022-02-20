@@ -1,4 +1,5 @@
 import ReactApexChart from 'react-apexcharts'
+import React from 'react'
 import infoIcon from '../Assets/infoIcon.png'
 // import ResizeCharts from './ResizeCharts'
 
@@ -181,11 +182,17 @@ const ScatterChart = () => {
     }
   }
 
+  const [show, changeShow] = React.useState(false)
+
   return (
     <div className="Card">
       <div className="Card__infoChart">
         <h3>Scatter: Salário x Notas das Empresas(Glassdoor)</h3>
-        <img src={infoIcon} alt="infoIcon" />
+        <img src={infoIcon} alt="infoIcon" onClick={() => changeShow(!show)} />
+        <p className={`Card__descChart ${show ? 'on' : ''}`}>
+          Salários de programadores Júniores, Plenos ou Sêniores, de várias
+          empresas no site Glassdoor
+        </p>
       </div>
       <ReactApexChart
         options={state.options}
