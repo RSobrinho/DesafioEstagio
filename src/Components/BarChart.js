@@ -95,11 +95,29 @@ const BarChart = () => {
           }
         },
         {
-          breakpoint: 420,
+          breakpoint: 425,
           options: {
             chart: {
-              width: '280px',
-              height: '230px'
+              width: '340px',
+              height: '260px'
+            }
+          }
+        },
+        {
+          breakpoint: 425,
+          options: {
+            chart: {
+              width: '340px',
+              height: '260px'
+            }
+          }
+        },
+        {
+          breakpoint: 369,
+          options: {
+            chart: {
+              width: '310px',
+              height: '250px'
             }
           }
         }

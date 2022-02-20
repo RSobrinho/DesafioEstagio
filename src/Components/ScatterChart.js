@@ -154,17 +154,26 @@ const ScatterChart = () => {
           }
         },
         {
-          breakpoint: 420,
+          breakpoint: 425,
           options: {
             chart: {
-              width: '280px',
-              height: '240px'
+              width: '340px',
+              height: '260px'
             },
             xaxis: {
               tickAmount: 7
             },
             yaxis: {
               tickAmount: 7
+            }
+          }
+        },
+        {
+          breakpoint: 369,
+          options: {
+            chart: {
+              width: '310px',
+              height: '250px'
             }
           }
         }
