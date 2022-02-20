@@ -80,6 +80,11 @@
   width: 1.4rem;
 }
 
+.Header > button:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
 /* CardStyle */
 .Card {
   display: flex;
@@ -114,6 +119,23 @@
 .Card__infoChart img {
   width: 1.6rem;
   object-fit: contain;
+  opacity: 0.8;
+}
+
+.Card__infoChart img:hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.Card__infoChart > .Card__desc {
+  background-color: tomato;
+
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+}
+
+@media screen {
 }
 
 @media (max-width: 1435px) {
@@ -187,5 +209,8 @@
   }
   .Card__infoChart {
     right: 5rem;
+  }
+  .Card__infoChart h3 {
+    font-size: 1.5rem;
   }
 }

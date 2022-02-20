@@ -1,6 +1,6 @@
 import ReactApexChart from 'react-apexcharts'
 import infoIcon from '../Assets/infoIcon.png'
-import ResizeCharts from './ResizeCharts'
+// import ResizeCharts from './ResizeCharts'
 
 const ScatterChart = () => {
   const state = {
@@ -74,7 +74,17 @@ const ScatterChart = () => {
     ],
     options: {
       chart: {
-        type: 'scatter'
+        type: 'scatter',
+        toolbar: {
+          tools: {
+            selection: false,
+            zoom: false,
+            zoomin: false,
+            zoomout: false,
+            pan: false,
+            reset: false
+          }
+        }
       },
       xaxis: {
         tickAmount: 15,
@@ -84,7 +94,81 @@ const ScatterChart = () => {
       },
       yaxis: {
         tickAmount: 10
-      }
+      },
+      responsive: [
+        {
+          breakpoint: 1435,
+          options: {
+            chart: {
+              width: '500px',
+              height: '400px'
+            }
+          }
+        },
+        {
+          breakpoint: 1200,
+          options: {
+            chart: {
+              width: '460px',
+              height: '360px'
+            }
+          }
+        },
+        {
+          breakpoint: 1024,
+          options: {
+            chart: {
+              width: '380px',
+              height: '300px'
+            }
+          }
+        },
+        {
+          breakpoint: 850,
+          options: {
+            chart: {
+              width: '550px',
+              height: '500px'
+            }
+          }
+        },
+        {
+          breakpoint: 600,
+          options: {
+            chart: {
+              width: '450px',
+              height: '350px'
+            }
+          }
+        },
+        {
+          breakpoint: 500,
+          options: {
+            chart: {
+              width: '380px',
+              height: '310px'
+            },
+            xaxis: {
+              tickAmount: 10
+            }
+          }
+        },
+        {
+          breakpoint: 420,
+          options: {
+            chart: {
+              width: '280px',
+              height: '240px'
+            },
+            xaxis: {
+              tickAmount: 7
+            },
+            yaxis: {
+              tickAmount: 7
+            }
+          }
+        }
+      ]
     }
   }
 
@@ -98,8 +182,8 @@ const ScatterChart = () => {
         options={state.options}
         series={state.series}
         type="scatter"
-        width={ResizeCharts()}
-        height={ResizeCharts()}
+        width="600"
+        height="auto"
       />
     </div>
   )
